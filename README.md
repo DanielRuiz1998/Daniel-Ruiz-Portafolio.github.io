@@ -5,7 +5,7 @@
 Daniel Ruiz Palomino 
 
 * [LinkedIn](https://www.linkedin.com/in/daniel-ruiz-palomino-331049245/)
-* [Porfolio web]([https://midominio.es/](https://danielruiz1998.github.io/Daniel-Ruiz-Portafolio.github.io/))
+* [Porfolio web]((https://danielruiz1998.github.io/Daniel-Ruiz-Portafolio.github.io/))
 
 ## Ver ejemplo en vivo
 - [ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
