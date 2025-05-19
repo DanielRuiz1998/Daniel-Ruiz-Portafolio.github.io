@@ -1,6 +1,6 @@
 ## Descripción 💡
 
-En este portfolio muestro uno de mis trabajos creados con HTML, CSS y JavaScript con su freamwork VUE.
+En este portfolio muestro uno de mis trabajos creados con HTML, CSS y JavaScript con su framework VUE.
 
 ## Autor ➔
 Daniel Ruiz Palomino 
