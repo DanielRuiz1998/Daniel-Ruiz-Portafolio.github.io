@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="restaurante.css">
+</head>
+
+<body>
+    <header>
+        <h1>GOOD FOOD</h1>
+    </header>
+    <main id="restaurante">
+        <div>
+            <!-- Aqui esta lo primero que se muestra-->
+            <p>Bienvenido al restaurante, para darle un buen servicio, por favor, indiquenos su nombre:</p>
+            <input type="text" v-model="nombre">
+            <button @click="principio()">Empezar</button>
+            <!-- Aqui seleccionamos donde comeremos-->
+            <p v-model="saludo">{{saludo}}</p>
+            <p v-show="sitio">
+                <input type="radio" name="lugar" value="tomar" v-model="aqui" @click="tomar()"> Tomar aqui
+                <input type="radio" name="lugar" value="llevar" v-model="domi" @click="llevar()"> Llevar
+            </p>
+            <!-- Aqui se muestra lo seleccionado para domicilio-->
+            <div v-show="domi">
+                Direccion: <input type="text" v-model="direccion">
+                Telefono: <input type="text" v-model="telefono">
+                <p>Seleccione los platos que desea: (12€ cada uno)</p>
+                <input type="checkbox" value="Hamburguesa" v-model="p1"> Plato 1 (Hamburguesa de buey)
+                <br>
+                <input type="checkbox" value="Bocadillo" v-model="p1"> Plato 2 (Bocadillo de pollo)
+                <br>
+                <input type="checkbox" value="Pasta" v-model="p1"> Plato 3 (Pasta a la boloñesa)
+                <br>
+                <input type="checkbox" value="Lubina" v-model="p1"> Plato 4 (Lubina al horno)
+                <p>¿Algun extra? (1€ cada uno)</p>
+                <input type="checkbox" value="Ensalada" v-model="p2"> Extra 1 (Ensalada)
+                <br>
+                <input type="checkbox" value="Patatas fritas" v-model="p2"> Extra 2 (Patatas fritas)
+                <br>
+                <input type="checkbox" value="Queso" v-model="p2"> Extra 3 (Queso)
+                <br>
+                <input type="checkbox" value="Salsas" v-model="p2"> Extra 4 (Salsas)
+                <p>Postre: (2,5€)</p>
+                <input type="radio" name="postre" value="Tarta de queso" v-model="postre"> Tarta de queso
+                <br>
+                <input type="radio" name="postre" value="Brownie" v-model="postre"> Brownie
+                <p>¿Cafe? (1€)</p>
+                <input type="radio" name="cafe" value="si" v-model="cafe"> Si
+                <br>
+                <input type="radio" name="cafe" value="no" v-model="cafe"> No
+
+                <p><button @click="pedir()">Pedir</button></p>
+                <p v-show="total">Total: {{total}}€</p>
+            </div>
+        </div>
+        <!-- Aqui se muestra lo seleccionado para tomar en el local-->
+        <div v-show="aqui">
+            <p>Seleccione los platos que desea: (12€ cada uno)</p>
+            <input type="checkbox" value="Hamburguesa" v-model="p1"> Plato 1 (Hamburguesa de buey)
+            <br>
+            <input type="checkbox" value="Bocadillo" v-model="p1"> Plato 2 (Bocadillo de pollo)
+            <br>
+            <input type="checkbox" value="Pasta" v-model="p1"> Plato 3 (Pasta a la boloñesa)
+            <br>
+            <input type="checkbox" value="Lubina" v-model="p1"> Plato 4 (Lubina al horno)
+            <p>¿Algun extra? (1€ cada uno)</p>
+            <input type="checkbox" value="Ensalada" v-model="p2"> Extra 1 (Ensalada)
+            <br>
+            <input type="checkbox" value="Patatas fritas" v-model="p2"> Extra 2 (Patatas fritas)
+            <br>
+            <input type="checkbox" value="Queso" v-model="p2"> Extra 3 (Queso)
+            <br>
+            <input type="checkbox" value="Salsas" v-model="p2"> Extra 4 (Salsas)
+            <p>Postre: (2,5€)</p>
+            <input type="radio" name="postre" value="Tarta de queso" v-model="postre"> Tarta de queso
+            <br>
+            <input type="radio" name="postre" value="Brownie" v-model="postre"> Brownie
+            <p>¿Cafe? (1€)</p>
+            <input type="radio" name="cafe" value="si" v-model="cafe"> Si
+            <br>
+            <input type="radio" name="cafe" value="no" v-model="cafe"> No
+
+            <p><button @click="pedir()">Pedir</button></p>
+            <p v-show="pago">Total: {{total}}€</p>
+
+        </div>
+        <!---Aqui muestro los botones para finalizar o cancelar-->
+        <div v-show="resultado">
+            <button @click="finalizar()">Finalizar pedido</button>
+            <button @click="cancelar()">Cancelar comanda</button>
+        </div>
+        <div v-if="alertVisible" class="custom-alert">
+            <p>{{ alertMessage }}</p>
+            <button @click="closeAlert">Cerrar</button>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script src="vue.js"></script>
+    <script src="jspdf.min.js"></script>
+    <script src="restaurante.js"></script>
+
+</body>
+
+</html>
