@@ -7,7 +7,6 @@ Daniel Ruiz Palomino
 
 * [LinkedIn](https://www.linkedin.com/in/daniel-ruiz-palomino-331049245/)
 * [Registro de pedido](https://danielruiz1998.github.io/Daniel-Ruiz-Portafolio.github.io/)
-* [Registro de vehiculos](https://github.com/DanielRuiz1998/Daniel-Ruiz-Portafolio.github.io/tree/main/TrabajoITV)
 
 
 ## Instalación
