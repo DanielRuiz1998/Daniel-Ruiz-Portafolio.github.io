@@ -1,5 +1,6 @@
 ## Descripción 💡
 
+En este portfolio muestro uno de mis trabajos creados con HTML, CSS y JavaScript con su freamwork VUE.
 
 ## Autor ➔
 Daniel Ruiz Palomino 
@@ -7,8 +8,6 @@ Daniel Ruiz Palomino
 * [LinkedIn](https://www.linkedin.com/in/daniel-ruiz-palomino-331049245/)
 * [Porfolio web](https://danielruiz1998.github.io/Daniel-Ruiz-Portafolio.github.io/)
 
-## Ver ejemplo en vivo
-- [ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
 
 ## Instalación
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
