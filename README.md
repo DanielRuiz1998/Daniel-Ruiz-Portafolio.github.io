@@ -6,7 +6,7 @@ En este portfolio muestro uno de mis trabajos creados con HTML, CSS y JavaScript
 Daniel Ruiz Palomino 
 
 * [LinkedIn](https://www.linkedin.com/in/daniel-ruiz-palomino-331049245/)
-* [Registro de pedido](https://danielruiz1998.github.io/Daniel-Ruiz-Portafolio.github.io/)
+* [Proyecto-Registro de pedido](https://danielruiz1998.github.io/Daniel-Ruiz-Portafolio.github.io/)
 
 
 ## Instalación
