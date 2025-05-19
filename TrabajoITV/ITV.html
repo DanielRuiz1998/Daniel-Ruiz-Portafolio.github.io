@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITV</title>
+    <link rel="stylesheet" href="estiloITV.css">
+    <script src="ITV.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ITV</h1>
+    </header>
+    <main>
+        <p>
+            <label for="nombre">Nombre </label>
+            <input type="text" id="nombre">
+        </p>
+        <p>
+            <label for="apellido">Apellidos</label>
+            <input type="text" id="apellido" >
+        </p>
+        <p>
+            <label for="dni">DNI </label>
+            <input type="text" id="dni" onblur="validar()">
+        </p>
+        <p>
+            <label for="vehiculos">Nº de Vehiculos </label>
+            <select name="vehiculos" id="vehiculos" onclick="completar()" onchange="reset()">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </p>
+    </main>
+    <footer>
+        <div id="contenido">
+            
+        </div>
+        <p>
+        <button onclick="pagar()">Pagar</button>
+        </p>
+        <p id="pago"></p>
+    </footer>
+
+</body>
+</html>
